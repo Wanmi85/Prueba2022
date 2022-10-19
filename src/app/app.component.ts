@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Broma } from './broma';
 
 @Component({
   selector: 'joke-list',
@@ -6,20 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class JokeListComponent {
-  title = 'Prueba2022';
   
-  jokes=[{
-    setup: "What did the cheese say when it looked in the mirror?",
-    punchline: "Hello-Me (Halloumi)"
-    },
-    {
-    setup: "What kind of cheese do you use to disguise a small horse?",
-    punchline: "Mask-a-pony (Mascarpone)"
-    },
-    {
-    setup: "A kid threw a lump of cheddar at me",
-    punchline: "I thought Thats not very mature"
-    },];
+  arrayBroma=[new Broma("What did the cheese say when it looked in the mirror?", "Hello-me(Halloumi)"),
+    new Broma("What kind of cheese do you use to disguise a small horse?", "Mask-apony (Mascarpone)"),
+    new Broma("A kid threw a lump of cheddar at me", "I thought ‘That’s not verymature’")]
   
+  constructor() {
+
+  
+  }
+
 }
+ 
+    
+
 

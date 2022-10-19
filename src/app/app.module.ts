@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { JokeListComponent } from './app.component';
+import { BromaComponent } from './broma/broma.component';
 
 @NgModule({
   declarations: [
-    JokeListComponent
+    JokeListComponent,
+    BromaComponent
   ],
   imports: [
     BrowserModule
