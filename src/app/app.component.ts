@@ -8,15 +8,18 @@ import { Broma } from './broma';
 })
 export class JokeListComponent {
   
-  arrayBroma=[new Broma("What did the cheese say when it looked in the mirror?", "Hello-me(Halloumi)"),
+  arrayBromas=[new Broma("What did the cheese say when it looked in the mirror?", "Hello-me(Halloumi)"),
     new Broma("What kind of cheese do you use to disguise a small horse?", "Mask-apony (Mascarpone)"),
     new Broma("A kid threw a lump of cheddar at me", "I thought ‘That’s not verymature’")]
   
+    
+    
   constructor() {
-
-  
   }
-
+  anadirBroma(nuevaBroma:Broma){
+    this.arrayBromas.unshift(nuevaBroma);
+  }
+  
 }
  
     
