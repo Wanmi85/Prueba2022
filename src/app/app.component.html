@@ -1,5 +1,5 @@
-
-<app-broma *ngFor="let broma of arrayBroma" [broma]="broma">
+<app-broma-formulario (nuevaBromaEvento)="anadirBroma($event) "></app-broma-formulario>
+<app-broma *ngFor="let broma of arrayBromas" [bromaHijo]="broma">
 </app-broma>
 
 

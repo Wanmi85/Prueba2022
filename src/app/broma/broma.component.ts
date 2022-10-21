@@ -8,7 +8,7 @@ import { Broma } from '../broma';
   styleUrls: ['./broma.component.css']
 })
 export class BromaComponent implements OnInit {
-@Input()broma?:Broma;
+@Input()bromaHijo?:Broma;
   constructor() { }
 
   ngOnInit(): void {
